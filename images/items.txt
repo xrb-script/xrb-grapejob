@@ -1,1 +1,159 @@
-
+	['chardonnaygrape'] = { 
+		label = 'Chardonnay Grape', 
+		weight = 100, 
+		stack = true, 
+		close = false 
+	},
+    ['pinotnoirgrape'] = { 
+		label = 'Pinot Noir Grape', 
+		weight = 100, 
+		stack = true, 
+		close = false 
+	},
+	['zinfandelgrape'] = { 
+		label = 'Zinfandel Grape', 
+		weight = 100, 
+		stack = true, 
+		close = false
+	},
+	['sauvignonblancgrape'] = { 
+		label = 'Sauvignon Blanc Grape',
+		 weight = 100, 
+		 stack = true, 
+		 close = false 
+		},
+	['cabernetsauvignongrape'] = { 
+		label = 'Cabernet Sauvignon Grape', 
+		weight = 100, 
+		stack = true, 
+		close = false 
+	},
+['yeast'] = { 
+	label = 'Yeast', 
+	weight = 50, 
+	stack = true, 
+	close = false 
+},
+['sugar'] = { 
+	label = 'Sugar', 
+	weight = 50, 
+	stack = true, 
+	close = false 
+},
+['empty_barrel'] = { 
+	label = 'Empty Barrel', 
+	weight = 500, 
+	stack = true, 
+	close = false 
+},
+['empty_bottle'] = { 
+	label = 'Empty Bottle', 
+	weight = 80, 
+	stack = true, 
+	close = false 
+},
+['chardonnaybarrel'] = { 
+	label = 'Chardonnay Wine Barrel', 
+	weight = 1000, 
+	stack = true, 
+	close = false, 
+	description = 'Full of Chardonnay wine, ready for bottling.' 
+},
+['pinotnoirbarrel'] = { 
+	label = 'Pinot Noir Wine Barrel',
+    weight = 1000, 
+	stack = true, |
+	close = false, 
+	description = 'Full of Pinot Noir wine, ready for bottling.' 
+},
+['zinfandelbarrel'] = { 
+	label = 'Zinfandel Wine Barrel', 
+	weight = 1000, 
+	stack = true, 
+	close = false, 
+	description = 'Full of Zinfandel wine, ready for bottling.' 
+},
+['sauvignonblancbarrel'] = { 
+	label = 'Sauvignon Blanc Wine Barrel', 
+	weight = 1000, 
+	stack = true, 
+	close = false, 
+	description = 'Full of Sauvignon Blanc wine, ready for bottling.' 
+},
+['cabernetsauvignonbarrel'] = { 
+	label = 'Cabernet Sauvignon Wine Barrel', 
+	weight = 1000, 
+	stack = true, 
+	close = false, 
+	description = 'Full of Cabernet Sauvignon wine, ready for bottling.' 
+},
+['chardonnaybottle'] = { 
+	label = 'Chardonnay Wine (Bottle)', 
+	weight = 750, 
+	stack = true, 
+	close = false, 
+	client = {
+		status = { thirst = 50000 },
+		anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+		prop = { model = `prop_wine_red`, pos = vec3(0.05, 0.05, 0.05), rot = vec3(0.0, 0.0, -1.5) },
+		usetime = 2500,
+		cancel = true,
+		notification = 'You drank some refreshing Wine'
+	}
+},
+['pinotnoirbottle'] = { 
+	label = 'Pinot Noir Wine (Bottle)', 
+	weight = 750, 
+	stack = true, 
+	close = false, 
+	client = {
+		status = { thirst = 50000 },
+		anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+		prop = { model = `prop_wine_red`, pos = vec3(0.05, 0.05, 0.05), rot = vec3(0.0, 0.0, -1.5) },
+		usetime = 2500,
+		cancel = true,
+		notification = 'You drank some refreshing Wine'
+	}
+},
+['zinfandelbottle'] = { 
+	label = 'Zinfandel Wine (Bottle)', 
+	weight = 750, 
+	stack = true, 
+	close = false, 
+	client = {
+		status = { thirst = 50000 },
+		anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+		prop = { model = `prop_wine_red`, pos = vec3(0.05, 0.05, 0.05), rot = vec3(0.0, 0.0, -1.5) },
+		usetime = 2500,
+		cancel = true,
+		notification = 'You drank some refreshing Wine'
+	}
+},
+['sauvignonblancbottle'] = { 
+	label = 'Sauvignon Blanc Wine (Bottle)', 
+	weight = 750, 
+	stack = true, 
+	close = false, 
+	client = {
+		status = { thirst = 50000 },
+		anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+		prop = { model = `prop_wine_red`, pos = vec3(0.05, 0.05, 0.05), rot = vec3(0.0, 0.0, -1.5) },
+		usetime = 2500,
+		cancel = true,
+		notification = 'You drank some refreshing Wine'
+	}
+},
+['cabernetsauvignonbottle'] = { 
+	label = 'Cabernet Sauvignon Wine (Bottle)', 
+	weight = 750, 
+	stack = true, 
+	close = false, 
+	client = {
+		status = { thirst = 50000 },
+		anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+		prop = { model = `prop_wine_red`, pos = vec3(0.05, 0.05, 0.05), rot = vec3(0.0, 0.0, -1.5) },
+		usetime = 2500,
+		cancel = true,
+		notification = 'You drank some refreshing Wine'
+	}
+}, -- consume adds alcohol effect for example
