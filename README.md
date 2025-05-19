@@ -1,6 +1,9 @@
 # xrb-grapejob
 esx #esx qbcore #qbox #qbcore #fivem #server
 
+**Preveiw**
+https://youtu.be/llE_kd5cbVE
+
 for esx crafting system
 https://github.com/byextracode/xc_craft
 
