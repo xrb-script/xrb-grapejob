@@ -4,6 +4,7 @@ game 'gta5'
 author 'xResul Albania'
 description 'Grape Harvesting, Wine Crafting, and Selling Script (ESX/QBCore)'
 version '2.1.0'
+discord 'discord.gg/CAyUh9su2s'
 
 lua54 'yes'
 
