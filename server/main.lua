@@ -96,7 +96,7 @@ RegisterNetEvent('grapes:server:giveReward', function(amount)
     local player = GetPlayer(src); if not player then return end
     amount = tonumber(amount) or 0; if amount <= 0 then return end
 
-    -- Zgjidh llojin e rrushit bazuar në shanset
+    
     local randomChance = math.random(1, 100); local cumulativeChance = 0; local chosenGrape = nil
     for _, rewardData in ipairs(Config.CollectProps.rewards) do
         cumulativeChance = cumulativeChance + rewardData.chance
