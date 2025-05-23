@@ -3,9 +3,9 @@ local Framework = nil
 local QBCore, ESX = nil, nil
 local PlayerData = {}
 local collecting = false
-local currentProps = {} -- Holds props for each collection zone { entity, coords, available, respawnTimer }
-local MAX_SPAWN_ATTEMPTS_PER_PROP = 25 -- Sa herë të provojë të gjejë vend të lirë për një prop
-local MIN_SEPARATION_DISTANCE = 1.8 -- Distanca minimale midis qendrave të propseve
+local currentProps = {}
+local MAX_SPAWN_ATTEMPTS_PER_PROP = 25
+local MIN_SEPARATION_DISTANCE = 1.8
 
 -- Initial framework check
 CreateThread(function()
@@ -124,7 +124,7 @@ function CreateRandomPropInZone(zoneData, existingPropsInZone, modelHash)
                 if DoesEntityExist(prop) then
                     SetEntityHeading(prop, propHeading)
                     Wait(0)
-                    PlaceObjectOnGroundProperly(prop) -- Rregullim final
+                    PlaceObjectOnGroundProperly(prop)
                     Wait(5)
                     FreezeEntityPosition(prop, true)
 
@@ -151,7 +151,7 @@ function CreateRandomPropInZone(zoneData, existingPropsInZone, modelHash)
     return false, nil, nil
 end
 
---! FUNKSION I PËRDITËSUAR PËR RESPAWN
+
 function RespawnProp(propData, zoneData, modelHash)
     local entityToReplace = propData.entity
 
